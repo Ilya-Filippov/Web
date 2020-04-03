@@ -1,5 +1,28 @@
+@font-face {
+  font-family: 'Museo Sans Reg';
+  src: url("../font/MuseoSansCyrlReg/MuseoSansCyrl-300.eot");
+  src: local("../font/MuseoSansCyrlReg/MuseoSansCyrl-300"), url("../font/MuseoSansCyrlReg/MuseoSansCyrl-300.eot?#iefix") format("embedded-opentype"), url("../font/MuseoSansCyrlReg/MuseoSansCyrl-300.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Museo Sans Bold';
+  src: url("../font/MuseoSansCyrlBold/MuseoSansCyrl-700.eot");
+  src: local("../font/MuseoSansCyrlBold/MuseoSansCyrl-700"), url("../font/MuseoSansCyrlBold/MuseoSansCyrl-700.eot?#iefix") format("embedded-opentype"), url("../font/MuseoSansCyrlBold/MuseoSansCyrl-700.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: sans-serif;
+  color: #333333;
+  font-family: 'Museo Sans Reg', sans-serif;
+  font-weight: 300;
 }
 
 img {
@@ -20,7 +43,7 @@ img {
 @media (max-width: 768px) {
   .container {
     width: 580px;
-    width: 95%;
+    width: 90%;
   }
 }
 
@@ -29,6 +52,33 @@ img {
   background-color: #ffd200;
   border: none;
   padding: 18px 30px;
+}
+
+.button:hover {
+  background-color: #ffdb33;
+  cursor: pointer;
+}
+
+.section {
+  padding: 90px 0;
+}
+
+.section-title {
+  font-size: 24px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+}
+
+.section-subtitle {
+  display: block;
+  font-size: 16px;
+}
+
+.input {
+  border-radius: 10px;
+  border: 1px solid #dddddd;
+  padding: 26px;
+  font-size: 15px;
 }
 
 .navbar {
@@ -74,5 +124,193 @@ img {
   }
   .navbar__logo {
     width: 90px;
+  }
+}
+
+.hero {
+  padding: 50px 0;
+  background-color: #f5f5f5;
+}
+
+.hero-block {
+  display: flex;
+}
+
+.hero-text {
+  flex-basis: 50%;
+  padding-right: 140px;
+}
+
+.hero-text__title {
+  font-size: 41px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+  line-height: 55px;
+  margin-bottom: 20px;
+}
+
+.hero-text__subtitle {
+  display: block;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 65px;
+  margin-bottom: 40px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+}
+
+.hero-text__image {
+  width: 570px;
+  height: 488px;
+}
+
+.hero-list {
+  margin: 0;
+  padding: 0;
+}
+
+.hero-list__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.hero-list__item:last-child {
+  margin-bottom: 0;
+}
+
+.hero-list__image {
+  flex-basis: 40px;
+  height: 40px;
+  border: 2px solid #ffd200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin-right: 30px;
+}
+
+.hero-list__text {
+  max-width: 300px;
+}
+
+@media (max-width: 1200px) {
+  .hero-block {
+    flex-direction: column;
+  }
+  .hero-list {
+    margin-bottom: 44px;
+  }
+  .hero-text {
+    padding-right: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-text__title {
+    font-size: 24px;
+    line-height: 1.4;
+    margin-bottom: 15px;
+  }
+  .hero-text__subtitle {
+    font-size: 16px;
+    margin-bottom: 28px;
+  }
+  .herolist__item {
+    margin-bottom: 20px;
+  }
+  .herolist__text {
+    font-size: 12px;
+  }
+  .herolist__image {
+    margin-right: 15px;
+  }
+}
+
+.offer {
+  background-image: url("../img/kunha.jpg");
+  background-position: center right;
+  background-size: contain;
+  position: relative;
+}
+
+.offer:before {
+  content: '';
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+}
+
+.offer-block {
+  width: 50%;
+  padding-right: 90px;
+  position: relative;
+}
+
+.offer__title {
+  max-width: 360px;
+  margin-bottom: 24px;
+  line-height: 35px;
+}
+
+.offer__subtitle {
+  max-width: 250px;
+  margin-bottom: 30px;
+}
+
+.offer__input {
+  margin-bottom: 30px;
+  width: 240px;
+}
+
+.offer__input:first-child {
+  margin-right: 10px;
+}
+
+.offer__button {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.offer-text {
+  display: flex;
+  justify-content: space-between;
+  line-height: 24px;
+  font-size: 15px;
+}
+
+.offer-text__phone {
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+}
+
+.manager {
+  margin-right: 70px;
+  max-width: 224px;
+}
+
+@media (max-width: 1200px) {
+  .offer {
+    background-size: cover;
+  }
+  .offer__input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .offer__button {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 768px) {
+  .offer {
+    background: #fff;
+  }
+  .offer-block {
+    width: 100%;
+    padding-right: 0;
   }
 }

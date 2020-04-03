@@ -1,0 +1,56 @@
+.offer
+  background-image: url('../img/kunha.jpg')
+  background-position: center right
+  background-size: contain
+  position: relative
+  &:before
+    content: ''
+    width: 50%
+    height: 100%
+    position: absolute
+    top: 0
+    left: 0
+    background-color: #fff
+  &-block
+    width: 50%
+    padding-right: 90px
+    position: relative
+  &__title
+    max-width: 360px
+    margin-bottom: 24px
+    line-height: 35px
+  &__subtitle
+    max-width: 250px
+    margin-bottom: 30px
+  &__input
+    margin-bottom: 30px
+    width: 240px
+    &:first-child
+      margin-right: 10px
+  &__button
+    width: 100%
+    margin-bottom: 30px
+  &-text
+    display: flex
+    justify-content: space-between
+    line-height: 24px
+    font-size: 15px
+    &__phone
+      +bold
+.manager
+  margin-right: 70px
+  max-width: 224px
+@media (max-width: 1200px)
+  .offer
+    background-size: cover
+    &__input
+      width: 100%
+      margin-bottom: 10px
+    &__button
+      font-size: 13px
+@media (max-width: 768px)
+  .offer
+    background: #fff
+    &-block
+      width: 100%
+      padding-right: 0
