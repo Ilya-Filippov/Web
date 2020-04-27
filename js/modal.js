@@ -5,6 +5,7 @@ $(document).ready(function () {
   var close = $('#close');
   var buttonUp = $('#up')
   var top = $('#top')
+  
   button.on('click', function () {
     modal.addClass('modal_active');
   })

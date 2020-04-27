@@ -1,0 +1,33 @@
+.material
+  position: relative
+  color: #000
+  &:before
+    content: ''
+    width: 100%
+    height: 280px
+    position: absolute
+    top: 0
+    left: 0
+    background-color: #ffc000
+    z-index: -1
+  &__title
+    text-align: center
+    margin:  auto
+    max-width: 1000px
+    font-size: 32px
+    line-height: 50px
+    margin-bottom: 200px
+.man
+  position: relative
+  &s
+    display: flex
+    justify-content: space-between
+  &__text
+    position: absolute
+    top: 0
+    left: 0
+    margin: 26px
+    font-size: 16
+    line-height: 23px
+strong
+  +bold
