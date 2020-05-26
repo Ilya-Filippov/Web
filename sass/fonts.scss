@@ -6,6 +6,7 @@
         url('../font/MuseoSansCyrlReg/MuseoSansCyrl-300.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+    font-display: auto;
 }
 
 @font-face {
@@ -16,6 +17,7 @@
         url('../font/MuseoSansCyrlBold/MuseoSansCyrl-700.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+    font-display: auto;
 }
 @mixin reg{
   font-family: 'Museo Sans Reg', sans-serif;

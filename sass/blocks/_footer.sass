@@ -30,3 +30,26 @@
       display: flex
       align-items: flex-start
       margin-bottom: 39px
+@media (max-width: 1000px)
+  .contacts
+    flex-basis: 50%
+    padding-top: 100px
+    padding-left: 100px
+@media (max-width: 768px)
+  footer
+    display: flex
+    flex-wrap: wrap-reverse
+    justify-content: center
+  .map
+    position: static
+    width: 100%
+  .contacts
+    position: static
+    flex-basis: 100%
+    padding: 0
+    text-align: center
+    &-list
+      display: inline-block
+      margin: auto
+    &__title
+      margin-bottom: 40px

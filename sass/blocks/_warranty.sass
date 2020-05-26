@@ -7,8 +7,10 @@
     font-size: 30px
     line-height: 45px
     +bold
-    margin-bottom: 100px
+    margin-bottom: 90px
 .doc
+  max-width: 280px
+  min-height: 488px
   &s
     display: flex
     justify-content: space-between
@@ -23,3 +25,21 @@
   &__text
     display: inline-block
     max-width: 274px
+    margin-bottom: 30px
+@media (max-width:1200px)
+  .doc
+    margin: auto
+    &s
+      display: flex
+      flex-wrap: wrap
+      align-items: flex-start
+    &__text
+      margin-bottom: 30px
+@media (max-width:500px)
+  .warranty
+    &__title
+      text-align: center
+      margin: auto
+      font-size: 24px
+      +bold
+      margin-bottom: 100px

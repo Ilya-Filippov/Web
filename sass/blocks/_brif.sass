@@ -9,7 +9,7 @@
   color: #000
   background-image: url('../img/brif-color-bg.jpg'), url('../img/brif-bg.jpg')
   background-position: left center, center right
-  background-size: 50%, contain
+  background-size: 50%, cover
   background-repeat: repeat-y, no-repeat
   &-block
     display: flex
@@ -30,6 +30,7 @@
     display: block
     font-size: 16px
     line-height: 45px
+    margin-bottom: 90px
   &-list
     list-style: none
     padding: 0
@@ -49,6 +50,8 @@
       border-radius: 50%
     &__text
       max-width: 400px
+    &__item
+      margin-bottom: 30px
 .form
   &__title
     max-width: 400px
@@ -60,6 +63,7 @@
     display: block
     font-size: 16px
     line-height: 45px
+    margin-bottom: 50px
   &__discription
     display: block
   &__button
@@ -75,7 +79,7 @@
 @media (max-width: 1200px)
   .brif
     &__form
-      padding-left: 30px
+      padding-left: 100px
   .interview
     padding-right: 30px
     &__title
@@ -83,24 +87,44 @@
       margin-bottom: 15px
     &__subtitle
       margin-bottom: 30px
+      line-height: normal
     &-list
       &__text
         font-size: 14px
         max-width: 300px
       &__counter
         margin-right: 20px
-  &__title
+    &__title
     font-size: 20px
     margin-bottom: 15px
-  &__subtitle
+    &__subtitle
     margin-bottom: 30px
 @media (max-width: 768px)
   .brif
     background-image: url('../img/brif-color-bg.jpg'), url('../img/brif-bg.jpg')
     background-position: top center, center bottom
-    background-size: 100% 50%, contain
+    background-size: 100% 50%, cover
     background-repeat: repeat-x, no-repeat
     &-block
       flex-direction: column
     &__form
-      margin-top: 80px
+      margin-top: 280px
+      position: relative
+      padding-left: 50px
+  .form__title
+    margin: auto
+    margin-bottom: 30px
+  .form__subtitle
+    margin-bottom: 30px
+    line-height: normal
+  .interview
+    padding-right: 20px
+    margin-left: 10px
+    &-list
+      &__item
+        margin-bottom: 30px
+      &__text
+        font-size: 14px
+        max-width: 210px
+      &__counter
+        margin-right: 7px

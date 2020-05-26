@@ -3,13 +3,9 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title></title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css\style.css">
-    <link rel="stylesheet" type="text/css" href="css\slick.css"/>
+    <title>Ремонт квартир</title>
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/animate.css">
-
-
   </head>
   <body>
     <!-- Навигация -->
@@ -18,7 +14,7 @@
       <div class="container">
         <div class="navbar-block">
           <div class="navbar__logo">
-            <img src="img\logo.png" alt="Логопит">
+            <img src="img/logo.png" alt="Логопит">
           </div>
           <div class="navbar__info">
             <div class="navbar__contacts">
@@ -42,20 +38,20 @@
               <ul class="hero-list">
                 <li class="hero-list__item wow bounceInLeft" data-wow-delay="0.1s">
                   <div class="hero-list__image">
-                    <img src="img\hero\clock.png" alt="clock">
+                    <img src="img/hero/clock.png" alt="clock">
                   </div>
                   <span class="hero-list__text">Точно соблюдаем сроки</span>
                 </li>
                 <li class="hero-list__item wow bounceInLeft" data-wow-delay="0.3s">
                   <div class="hero-list__image">
-                    <img src="img\hero\calculator.png" alt="calculator">
+                    <img src="img/hero/calculator.png" alt="calculator">
                   </div>
                   <span class="hero-list__text">Рассчитаем смету на работы и материалы
                      в день обращения</span>
                 </li>
                 <li class="hero-list__item wow bounceInLeft" data-wow-delay="0.5s">
                   <div class="hero-list__image">
-                    <img src="img\hero\paint.png" alt="paint">
+                    <img src="img/hero/paint.png" alt="paint">
                   </div>
                   <span class="hero-list__text">Предложим более 100 вариантов
                     исполнения дизайна Вашего жилья</span>
@@ -64,7 +60,7 @@
               <!--Конец списка -->
             </div>
             <div class="hero-image">
-              <img src="img\room.jpg" alt="room">
+              <img src="img/hero/room.jpg" alt="room">
             </div>
           </div>
         </div>
@@ -81,8 +77,8 @@
           <span class="section-subtitle offer__subtitle">Оставьте заявку на разработку
             бесплатного дизайн-проекта!
           </span>
-          <form class="form offer__form" id="offer-form" action="#" method="post">
-            <input type="text" name="name" class="input offer__input" placeholder="Ваше имя">
+          <form class="form offer__form" id="offer-form" action="mail.php" method="POST">
+            <input type="text" id="name" name="name" class="input offer__input" placeholder="Ваше имя">
             <input type="tel" name="phone" class="input offer__input phone" placeholder="Ваш телефон">
             <button class="button offer__button">Получить бесплатный дизайн-проект</button>
           </form>
@@ -102,7 +98,7 @@
     <!-- Всплывающие окно-->
     <div class="modal" id="modal">
       <div class="modal-dialog">
-        <button class="modal-dialog__close" id="close">&times</button>
+        <button class="modal-dialog__close" id="close">&times;</button>
         <h4 class="modal-dialog__title">Всплывающие окно</h4>
       </div>
     </div>
@@ -111,22 +107,22 @@
     <button class="btn-up" id="up">Наверх</button>
     <section class="section portfolio">
       <div class="container">
-        <h2 class="section-title portfolio__title wow tada">Работая с 2007 года, мы сделали
+        <h2 class="section-title portfolio__title wow tada">Работая с 2007 года, <br> мы сделали
           более 500 ремонтов в квартирах и домах</h2>
-        <div class="slider">
-          <div class="slider__item"><img src="img\portfolio\portfolio1.jpg" alt=""></div>
-          <div class="slider__item"><img src="img\portfolio\portfolio2.jpg" alt=""></div>
-          <div class="slider__item"><img src="img\portfolio\portfolio3.jpg" alt=""></div>
-          <div class="slider__item"><img src="img\portfolio\portfolio1.jpg" alt=""></div>
-          <div class="slider__item"><img src="img\portfolio\portfolio2.jpg" alt=""></div>
-          <div class="slider__item"><img src="img\portfolio\portfolio3.jpg" alt=""></div>
-        </div>
+          <div class="slider">
+            <div class="slider__item"><img class="slider__img" src="img/portfolio/portfolio1.jpg" alt=""></div>
+            <div class="slider__item"><img class="slider__img" src="img/portfolio/portfolio2.jpg" alt=""></div>
+            <div class="slider__item"><img class="slider__img" src="img/portfolio/portfolio3.jpg" alt=""></div>
+            <div class="slider__item"><img class="slider__img" src="img/portfolio/portfolio4.jpg" alt=""></div>
+            <div class="slider__item"><img class="slider__img" src="img/portfolio/portfolio5.jpg" alt=""></div>
+            <div class="slider__item"><img class="slider__img" src="img/portfolio/portfolio6.jpg" alt=""></div>
+          </div>
         <div class="arrows portfolio__arrows">
           <div class="arrows__left">
-            <img src="img\portfolio\left-arrow.png" alt="">
+            <img src="img/portfolio/left-arrow.png" alt="">
           </div>
           <div class="arrows__right">
-            <img src="img\portfolio\right-arrow.png" alt="">
+            <img src="img/portfolio/right-arrow.png" alt="">
           </div>
         </div>
 
@@ -139,42 +135,42 @@
         <span class="price__subtitle section-subtitle">Прайс на наши услуги</span>
         <div class="cards">
           <div class="card wow fadeInUp" data-wow-delay="0.1s">
-            <div class="card__img"><img src="img\price\bathroom.jpg" alt=""></div>
+            <div class="card__img"><img src="img/price/bathroom.jpg" alt=""></div>
             <div class="card__text">
               <h4 class="card__title">Ремонт ванных комнат и с/у</h4>
               <a class="card__link" href="#">Узнать цены</a>
             </div>
           </div>
           <div class="card wow fadeInUp" data-wow-delay="0.3s">
-            <div class="card__img"><img src="img\price\livingroom.jpg" alt=""></div>
+            <div class="card__img"><img src="img/price/livingroom.jpg" alt=""></div>
             <div class="card__text">
               <h4 class="card__title">Ремонт комнат и квартир</h4>
               <a class="card__link" href="#">Узнать цены</a>
             </div>
           </div>
           <div class="card wow fadeInUp" data-wow-delay="0.5s">
-            <div class="card__img"><img src="img\price\office.jpg" alt=""></div>
+            <div class="card__img"><img src="img/price/office.jpg" alt=""></div>
             <div class="card__text">
               <h4 class="card__title">Отделка офисных помещений</h4>
               <a class="card__link" href="#">Узнать цены</a>
             </div>
           </div>
           <div class="card wow fadeInUp" data-wow-delay="0.7s">
-            <div class="card__img"><img src="img\price\newhouses.jpg" alt=""></div>
+            <div class="card__img"><img src="img/price/newhouses.jpg" alt=""></div>
             <div class="card__text">
               <h4 class="card__title">Ремонт в новостройках</h4>
               <a class="card__link" href="#">Узнать цены</a>
             </div>
           </div>
           <div class="card wow fadeInUp" data-wow-delay="0.8s">
-            <div class="card__img"><img src="img\price\kitchen.jpg" alt=""></div>
+            <div class="card__img"><img src="img/price/kitchen.jpg" alt=""></div>
             <div class="card__text">
               <h4 class="card__title">Ремонт кухонь</h4>
-              <a  class="card__link"href="#">Узнать цены</a>
+              <a  class="card__link" href="#">Узнать цены</a>
             </div>
           </div>
           <div class="card wow fadeInUp" data-wow-delay="1s">
-            <div class="card__img"><img src="img\price\house.jpg" alt=""></div>
+            <div class="card__img"><img src="img/price/house.jpg" alt=""></div>
             <div class="card__text">
               <h4 class="card__title">Ремонт дач и коттеджей</h4>
               <a class="card__link" href="#">Узнать цены</a>
@@ -193,46 +189,46 @@
         <div class="sequence">
           <div class="step">
             <div class="step__image">
-              <img src="img\steps\woman.png" alt="">
+              <img src="img/steps/woman.png" alt="">
             </div>
             <span class="step__text">Вы звоните нам или оставляете заявку</span>
           </div>
           <div class="step__arrow">
-            <img src="img\steps\circle-arrow.png" alt="">
+            <img src="img/steps/circle-arrow.png" alt="">
           </div>
           <div class="step">
             <div class="step__image">
-              <img src="img\steps\wall-clock.png" alt="">
+              <img src="img/steps/wall-clock.png" alt="">
             </div>
-            <span class="step__text">Согласуем удобное для Вас время выезда специалиста на замер
+      <span class="step__text">Согласуем удобное для Вас время выезда специалиста на замер
             </span>
           </div>
           <div class="step__arrow">
-            <img src="img\steps\circle-arrow.png" alt="">
+            <img src="img/steps/circle-arrow.png" alt="">
           </div>
           <div class="step">
             <div class="step__image">
-              <img src="img\steps\money.png" alt="">
+              <img src="img/steps/money.png" alt="">
             </div>
             <span class="step__text">Рассчитываем смету согласовываем с Вами
             </span>
           </div>
           <div class="step__arrow">
-            <img src="img\steps\circle-arrow.png" alt="">
+            <img src="img/steps/circle-arrow.png" alt="">
           </div>
           <div class="step">
             <div class="step__image">
-              <img src="img\steps\folded-document.png" alt="">
+              <img src="img/steps/folded-document.png" alt="">
             </div>
             <span class="step__text">Подписываем договор закупаем материал по оптовым ценам
             </span>
           </div>
           <div class="step__arrow">
-            <img src="img\steps\circle-arrow.png" alt="">
+            <img src="img/steps/circle-arrow.png" alt="">
           </div>
           <div class="step">
             <div class="step__image">
-              <img src="img\steps\calendar-with-a-clock.png" alt="">
+              <img src="img/steps/calendar-with-a-clock.png" alt="">
             </div>
             <span class="step__text">Выполняем ремонт в указанные сроки
             </span>
@@ -242,24 +238,24 @@
     </section>
     <!-- Материалы -->
     <section class="section material">
+      <div class="material-rect">
+        <h3 class="section-title material__title">Ремонт обойдется Вам дешевле, так как <br>
+          мы используем качественные материалы по оптовым ценам</h3>
+      </div>
       <div class="container">
-        <div class="material-rect">
-          <h3 class="section-title material__title">Ремонт обойдется Вам дешевле, так как <br>
-            мы используем качественные материалы по оптовым ценам</h3>
-        </div>
         <div class="mans">
           <div class="man">
-            <img class="man__img" src="img\material\man-serch.jpg" alt="">
+            <img class="man__img" src="img/material/man-serch.jpg" alt="">
             <span class="man__text">Поможем закупить все материалы
               по оптовым ценам у проверенных поставщиков</span>
           </div>
           <div class="man">
-            <img class="man__img" src="img\material\man-with-tool.jpg" alt="">
+            <img class="man__img" src="img/material/man-with-tool.jpg" alt="">
             <span class="man__text">Мы дадим Вам <strong>максимальные скидки</strong>
               у наших партнеров для закупки материалов оптом</span>
           </div>
           <div class="man">
-            <img class="man__img" src="img\material\man-with-pad.jpg" alt="">
+            <img class="man__img" src="img/material/man-with-pad.jpg" alt="">
             <span class="man__text">Все, что не сможете найти в городе -
               поможем заказать <strong>у проверенных поставщиков</strong></span>
           </div>
@@ -273,20 +269,20 @@
           подробно и прозрачно описаны в договоре</h2>
         <div class="docs">
           <div class="doc">
-            <img id="fullSize1" class="doc__img" src="img/warranty/doc1.jpg" alt="">
+            <img class="doc__img" src="img/warranty/doc1.jpg" alt="">
             <span class="doc__text">Гарантия на качество <br>
-              выполняемых работ
+              выполняемых работ <br>
             </span>
           </div>
           <div class="doc">
-            <img id="fullSize2" class="doc__img" src="img/warranty/doc2.jpg" alt="">
+            <img class="doc__img" src="img/warranty/doc2.jpg" alt="">
             <span class="doc__text">Гарантия на фиксированные цены
               Виды работ и цены на них
               прописаны в договоре
             </span>
           </div>
           <div class="doc">
-            <img id="fullSize3" class="doc__img" src="img/warranty/doc3.jpg" alt="">
+            <img class="doc__img" src="img/warranty/doc3.jpg" alt="">
             <span class="doc__text">Гарантия на точное соблюдение
               сроков и ответственность за
               их невыполнение
@@ -295,12 +291,6 @@
         </div>
       </div>
     </section>
-    <div class="full" id="full">
-      <div class="full-dialog">
-        <img class="full-dialog__img" src="img/doc1.jpg" alt="">
-        <button class="full-dialog__close" id="closeFull">&times</button>
-      </div>
-      </div>
     <section class="section brif">
       <div class="container">
         <div class="brif-block">
@@ -332,7 +322,7 @@
             <h3 class="form__title">Оставьте заявку на бесплатный
               расчет ремонта по телефону</h3>
             <span class="form__subtitle">Для этого заполните форму ниже</span>
-            <form method="#" id="brif-form">
+            <form method="POST" action="mail.php" id="brif-form">
               <input type="text" name="name" class="input form__input" placeholder="Ваше имя">
               <input type="tel" name="phone" class="input form__input phone" placeholder="Ваш телефон">
               <input type="text" name="email" class="input form__input" placeholder="Ваш email">
@@ -346,8 +336,8 @@
     <footer class="footer">
       <div class="map" id="map">
         <script type="text/javascript" charset="utf-8" async
-        src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A06513188cbe8473333e617e5126449e18c3b42b3e045f1bbd7e02d3054a67ed7&amp;
-        width=100%25&amp;height=640&amp;lang=ru_RU&amp;scroll=false"></script>
+        src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A94f028d4480471611bd5d63bd9e79b20b1e2890a2e1441ce7adab2a1c4d63c09&amp;width=100%25&amp;height=555&amp;lang=ru_RU&amp;scroll=true">
+        </script>
       </div>
         <div class="container">
           <div class="contacts-block">
@@ -358,7 +348,7 @@
               <ul class="contacts-list">
                 <li class="contacts-list__item">
                   <span class="contacts-list__icon">
-                    <img src="img\map-placeholder.png" alt="">
+                    <img src="img/footer/map-placeholder.png" alt="">
                   </span>
                   <span class="contacts-list__text">г. Москва <br>
                      <strong>ул. Ленинга, д. 10, <br>
@@ -366,14 +356,14 @@
                 </li>
                 <li class="contacts-list__item">
                   <span class="contacts-list__icon">
-                    <img src="img\clock-with-white-face.png" alt="">
+                    <img src="img/footer/clock-with-white-face.png" alt="">
                   </span>
                   <span class="contacts-list__text">Режим работы: <br>
                     <strong>с 9:00 до 18:00</strong></span>
                 </li>
                 <li class="contacts-list__item">
                   <span class="contacts-list__icon">
-                    <img src="img\phone-call-button.png" alt="">
+                    <img src="img/footer/phone-call-button.png" alt="">
                   </span>
                   <span class="contacts-list__text">Телефон: <br>
                     <a href="tel:+7(495)42-251-31"></a><strong>+7(495)42-251-31</strong></span>
@@ -384,13 +374,13 @@
         </div>
     </footer>
     <script src="js/jquery-3.4.1.min.js"></script>
-    <script type="text/javascript" src="js/slick.js"></script>
+    <script src="js/slick.js"></script>
     <script src="js/modal.js"></script>
     <script src="js/swiper.js"></script>
     <script src="js/wow.min.js"></script>
-    <script src="js/full.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.mask.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/ajax.js"></script>
   </body>
 </html>

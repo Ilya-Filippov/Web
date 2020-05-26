@@ -24,12 +24,43 @@
     border-radius: 50%
     padding: 31px
   &__text
-
     line-height: 20px
     font-size: 14px
+
   &__arrow
     min-width: 75px
     margin: 0 31px
 .sequence
   display: flex
   justify-content: space-between
+@media (max-width:1400px)
+  .step
+    max-width: 150px
+    margin-left: 10px
+    &__arrow
+      display: none
+    &__text
+      max-width: 150px
+@media (max-width:850px)
+  .sequence
+    display: flex
+    flex-wrap: wrap
+    .step
+      max-width: 150px
+      &__arrow
+        display: none
+        &__text
+          max-width: 150px
+@media (max-width:576px)
+  .sequence
+    text-align: center
+    display: block
+    margin: auto
+    .step
+      margin: auto
+      margin-top: 30px
+      max-width: 150px
+      &__arrow
+        display: none
+        &__text
+          max-width: 150px

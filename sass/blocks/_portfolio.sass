@@ -1,12 +1,13 @@
 .portfolio
-  background: $secondary url('../img/portfolio_backgraund.jpg') repeat-y center left
+  background: $secondary url('../img/portfolio/portfolio_backgraund.jpg') repeat-y center left
   background-size: 50%
   &__title
+    text-align: center
     font-size: 30px
     color: #000
     line-height: 45px
     margin: auto
-    width: 600px
+    max-width: 900px
     margin-bottom: 100px
   &__arrows
     max-width: 130px
@@ -14,3 +15,33 @@
     margin-top: 68px
     display: flex
     justify-content: space-between
+.slider
+  display: flex
+  justify-content: center
+  &__item
+    margin: auto
+    min-height: 280px
+    max-height: 280px
+    min-width: 370px
+    max-width: 370px
+  &__img
+    min-height: 280px
+    max-height: 280px
+    min-width: 370px
+    max-width: 370px
+@media (max-width:900px)
+  .slider
+    max-width: 370px
+@media (max-width:400px)
+  .slider
+    max-width: 245px
+    &__item
+      min-height: 186px
+      max-height: 186px
+      min-width: 245px
+      max-width: 245px
+    &__img
+      min-height: 186px
+      max-height: 186px
+      min-width: 245px
+      max-width: 245px

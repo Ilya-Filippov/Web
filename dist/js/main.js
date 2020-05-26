@@ -1,4 +1,12 @@
 $(document).ready(function () {
+  var modal = document.querySelector('#modal');
+  var close = document.querySelector('#close');
+  close.addEventListener('click', function () {
+    modal.classList.remove('modal_active');
+  })
+  setTimeout(function() {
+    modal.classList.remove('modal_active');
+  }, 5000);
  // Валидация форм
  $('#brif-form').validate({
    errorElement: "div",
@@ -59,5 +67,4 @@ $(document).ready(function () {
    }
 });
 // Маска для телефона
-$('.phone').mask("+7 (999) 999-99-99");
-});
+$('.phone').mask("+7 (999) 999-99-99")});
